@@ -12,7 +12,7 @@
   z-index: 100;
 }
 
-.modal {
+.modal-window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,36 +21,36 @@
   min-height: 581px;
   padding: 40px;
   background-color: var(--white-color);
-}
 
-.close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  padding: 0;
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
 
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
-  cursor: pointer;
-  transition: fill var(--transition-functions);
+    cursor: pointer;
+    transition: fill var(--transition-functions);
 
-  &:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+    }
   }
-}
 
-.close-button-icon {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  &__close-button-icon {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 
-  .close-button:hover &,
-  .close-button:focus & {
-    fill: var(--accent-color);
+    .modal-window__close-button:hover &,
+    .modal-window__close-button:focus & {
+      fill: var(--accent-color);
+    }
   }
 }

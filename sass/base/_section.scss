@@ -1,23 +1,15 @@
 .section {
   padding: 94px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
-.spec-section {
+.section-spec {
   padding-top: 94px;
-}
-
-.section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.section-p {
-  color: var(--text-color);
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
